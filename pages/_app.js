@@ -1,5 +1,12 @@
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+import { GlobalStyles } from '../styles/theme.config';
 
-export default MyApp;
+const Calendar = ({ Component, pageProps }) => {
+  return (
+    <>
+      <GlobalStyles />
+      <Component {...pageProps} />
+    </>
+  );
+};
+
+export default Calendar;
